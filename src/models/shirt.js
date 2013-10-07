@@ -1,7 +1,11 @@
 (function () {
 
   window.Shirt = Backbone.Model.extend({
-    // TODO: Add defaults property
+    defaults: {
+      large: 0,
+      medium: 0,
+      small: 0
+    }
   });
 
 })();

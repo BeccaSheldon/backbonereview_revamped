@@ -12,6 +12,24 @@
       // add +1 to each of that shirt's `type` inventory.
       // For example, if type === 'small', then add +1 to every small stock
       // in each shirt in this.options.shirts. Use .set(???) for this.
+
+
+      for(var i = 0; i < this.options.shirts.length; i++) {
+        var count = this.options.shirts[i].get(type);
+        // var mediumCount = this.options.shirts[i].get('medium');
+        // var largeCount = this.options.shirts[i].get('large');
+
+        count ++;
+        // mediumCount++;
+        // largeCount++;
+
+        console.log(count);
+
+        this.options.shirts[i].set({type: count});
+        // this.options.shirts[i].set({medium: mediumCount});
+        // this.options.shirts[i].set({large: largeCount});
+
+      }
     }
   });
 
