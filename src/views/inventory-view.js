@@ -19,13 +19,15 @@
         // var mediumCount = this.options.shirts[i].get('medium');
         // var largeCount = this.options.shirts[i].get('large');
 
-        count ++;
         // mediumCount++;
         // largeCount++;
 
         console.log(count);
 
-        this.options.shirts[i].set({type: count});
+        // this.options.shirts[i].set({ small: count + 1 });
+        this.options.shirts[i].set(type, count + 1);
+
+
         // this.options.shirts[i].set({medium: mediumCount});
         // this.options.shirts[i].set({large: largeCount});
 
